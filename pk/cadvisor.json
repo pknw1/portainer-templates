@@ -44,6 +44,26 @@
 		"readonly": true
 	  },
 	  {
+		"container": "/var/run", 
+		"bind": "/var/run",
+		"readonly": true
+	  },
+	  {
+		"container": "/sys", 
+		"bind": "/sys",
+		"readonly": true
+	  },
+	  {
+		"container": "/dev/disk", 
+		"bind": "/dev/disk",
+		"readonly": true
+	  },
+	  {
+		"container": "/var/lib/docker", 
+		"bind": "/var/lib/docker",
+		"readonly": true
+	  },
+	  {
 		"container": "/tmp", 
 		"bind": "/tmp"
 	  }
