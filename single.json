@@ -11,7 +11,7 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "value": "666"
+        "set": "666"
       },
       {
         "name": "USER",
