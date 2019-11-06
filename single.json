@@ -35,7 +35,7 @@
     {
         "name": "TZ",
         "label": "TimeZone",
-        "default": "London/Europe".
+        "default": "London/Europe"
 		"preset": true
       }
     ],
