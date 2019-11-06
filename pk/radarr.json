@@ -1,0 +1,61 @@
+  {
+    "type": 1,
+    "title": "Radarr",
+    "description": "",
+    "categories": ["custom"],
+    "platform": "linux",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "image": "linuxserver/radarr:latest",
+	"hostname": "",
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "666"      
+		},
+     {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "666"      
+		},
+     {
+        "name": "VIRTUAL_HOST",
+        "label": "VIRTUAL_HOST",
+        "default": "radarr.pknw1.co.uk"
+      },
+     {
+        "name": "VIRTUAL_PORT",
+        "label": "VIRTUAL_PORT",
+        "default": "7878"
+      },
+    {
+        "name": "TZ",
+        "label": "TimeZone",
+        "default": "London/Europe"
+      }
+    ],
+    "ports": [
+      "7878/tcp"
+    ],
+    "volumes": [
+	  {
+		"container": "/etc/localtime", 
+		"bind": "/etc/localtime",
+		"readonly": true
+	  },
+	  {
+		"container": "/tmp", 
+		"bind": "/tmp"
+	  },
+	  {
+		"container": "/config", 
+		"bind": "/home/docker/config/radarr"
+	},
+	{
+		"container": "/movies"
+	},
+	{
+		"container": "/downloads"
+	}
+	]
+  }

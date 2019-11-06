@@ -1,0 +1,61 @@
+  {
+    "type": 1,
+    "title": "Sonarr",
+    "description": "",
+    "categories": ["custom"],
+    "platform": "linux",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "image": "linuxserver/sonarr:latest",
+	"hostname": "",
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "666"      
+		},
+     {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "666"      
+		},
+     {
+        "name": "VIRTUAL_HOST",
+        "label": "VIRTUAL_HOST",
+        "default": "sonarr.pknw1.co.uk"
+      },
+     {
+        "name": "VIRTUAL_PORT",
+        "label": "VIRTUAL_PORT",
+        "default": "8989"
+      },
+    {
+        "name": "TZ",
+        "label": "TimeZone",
+        "default": "London/Europe"
+      }
+    ],
+    "ports": [
+      "8989/tcp"
+    ],
+    "volumes": [
+	  {
+		"container": "/etc/localtime", 
+		"bind": "/etc/localtime",
+		"readonly": true
+	  },
+	  {
+		"container": "/tmp", 
+		"bind": "/tmp"
+	  },
+	  {
+		"container": "/config", 
+		"bind": "/home/docker/config/sonarr"
+	},
+	{
+		"container": "/tv"
+	},
+	{
+		"container": "/downloads"
+	}
+	]
+  }
