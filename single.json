@@ -1,6 +1,6 @@
 [
   {
-    "type": "container",
+    "type": 1,
     "title": "Odoo",
     "description": "Open-source business apps",
     "categories": ["project-management"],
