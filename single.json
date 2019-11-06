@@ -11,19 +11,19 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "666".
+        "default": "666",
 		"preset": true
       },
      {
         "name": "PGID",
         "label": "PGID",
-        "default": "666".
+        "default": "666",
 		"preset": true
       },
      {
         "name": "VIRTUAL_HOST",
         "label": "VIRTUAL_HOST",
-        "default": ".pknw1.co.uk".
+        "default": ".pknw1.co.uk",
 		"preset": true
       },
      {
@@ -35,7 +35,7 @@
     {
         "name": "TZ",
         "label": "TimeZone",
-        "default": "London/Europe"
+        "default": "London/Europe",
 		"preset": true
       }
     ],
