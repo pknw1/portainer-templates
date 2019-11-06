@@ -1,0 +1,55 @@
+  {
+    "type": 1,
+    "title": "Odoo",
+    "description": "Open-source business apps",
+    "categories": ["custom"],
+    "platform": "linux",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "image": "odoo:latest",
+	"hostname": "",
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "666"      
+		},
+     {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "666"      
+		},
+     {
+        "name": "VIRTUAL_HOST",
+        "label": "VIRTUAL_HOST",
+        "default": ".pknw1.co.uk"
+      },
+     {
+        "name": "VIRTUAL_PORT",
+        "label": "VIRTUAL_PORT",
+        "default": "8080"
+      },
+    {
+        "name": "TZ",
+        "label": "TimeZone",
+        "default": "London/Europe"
+      }
+    ],
+    "ports": [
+      "8069/tcp"
+    ],
+    "volumes": [
+	  {
+		"container": "/etc/localtime", 
+		"bind": "/etc/localtime",
+		"readonly": true
+	  },
+	  {
+		"container": "/tmp", 
+		"bind": "/tmp"
+	  },
+	  {
+		"container": "/config", 
+		"bind": "/home/docker/config/APPNAME"
+		}
+	]
+  }
