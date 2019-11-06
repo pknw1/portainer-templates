@@ -4,7 +4,7 @@
     "description": "Open-source business apps",
     "categories": ["custom"],
     "platform": "linux",
-    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1logo.png",
     "image": "odoo:latest",
 	"hostname": "",
     "env": [

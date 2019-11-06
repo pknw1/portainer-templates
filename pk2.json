@@ -5,7 +5,7 @@
     "description": "",
     "categories": ["custom"],
     "platform": "linux",
-    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1logo.png",
     "image": "google/cadvisor:latest",
 	"hostname": "",
     "env": [
@@ -76,7 +76,7 @@
     "description": "Jackett",
     "categories": ["custom"],
     "platform": "linux",
-    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1logo.png",
     "image": "linuxserver/jackett:latest",
 	"hostname": "",
     "env": [
@@ -131,7 +131,7 @@
     "description": "",
     "categories": ["custom"],
     "platform": "linux",
-    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1logo.png",
     "image": "linuxserver/radarr:latest",
 	"hostname": "",
     "env": [
@@ -192,7 +192,7 @@
     "description": "",
     "categories": ["custom"],
     "platform": "linux",
-    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1logo.png",
     "image": "linuxserver/sonarr:latest",
 	"hostname": "",
     "env": [
