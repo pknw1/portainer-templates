@@ -3,15 +3,15 @@
     "type": 1,
     "title": "Odoo",
     "description": "Open-source business apps",
-    "categories": ["project-management"],
+    "categories": ["custom"],
     "platform": "linux",
-    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/odoo.png",
+    "logo": "https://www.pknw1.co.uk/assets/images/pknw1-white-146x88.png",
     "image": "odoo:latest",
     "env": [
       {
-        "name": "HOST",
-        "label": "PostgreSQL database host",
-        "type": "container"
+        "name": "PUID",
+        "label": "PUID",
+        "value": "666"
       },
       {
         "name": "USER",
