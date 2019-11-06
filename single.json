@@ -11,20 +11,17 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "666",
-		"preset": true
-      },
+        "default": "666"      
+		},
      {
         "name": "PGID",
         "label": "PGID",
-        "default": "666",
-		"preset": true
-      },
+        "default": "666"      
+		},
      {
         "name": "VIRTUAL_HOST",
         "label": "VIRTUAL_HOST",
-        "default": ".pknw1.co.uk",
-		"preset": true
+        "default": ".pknw1.co.uk"
       },
      {
         "name": "VIRTUAL_PORT",
